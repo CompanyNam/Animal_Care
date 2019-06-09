@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f49646e-880c-434f-8d11-5901115cfb8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Animalcare" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animalcare/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Animalcare/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animalcare/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Animalcare/home/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animalcare/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Animalcare/home/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animalcare/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Animalcare/templates/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="9f49646e-880c-434f-8d11-5901115cfb8b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,40 +73,31 @@
     <splitter split-orientation="horizontal" split-proportion="0.35086206">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Animalcare/home/models.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
+                <state relative-caret-position="833">
                   <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
                   <folding>
                     <element signature="e#0#28#0" expanded="true" />
-                    <marker date="1559994234324" expanded="true" signature="169:170" ph="..." />
-                    <marker date="1559994234324" expanded="true" signature="200:206" ph="..." />
-                    <marker date="1559994234324" expanded="true" signature="201:202" ph="..." />
-                    <marker date="1559994234324" expanded="true" signature="769:774" ph="..." />
-                    <marker date="1559994234324" expanded="true" signature="6037:6242" ph="..." />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Animalcare/home/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="493">
+                <state relative-caret-position="17">
                   <caret line="53" column="14" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
                   <folding>
                     <element signature="e#0#75#0" expanded="true" />
-                    <marker date="1559995133882" expanded="true" signature="263:321" ph="..." />
-                    <marker date="1559995133882" expanded="true" signature="2616:4551" ph="..." />
-                    <marker date="1559995133882" expanded="true" signature="4665:4666" ph="..." />
-                    <marker date="1559995133882" expanded="true" signature="5231:5232" ph="..." />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Animalcare/home/urls.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="153">
@@ -128,10 +113,10 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Animalcare/templates/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
+                <state relative-caret-position="17">
                   <caret line="57" column="116" selection-start-line="57" selection-start-column="116" selection-end-line="57" selection-end-column="116" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -142,7 +127,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file leaf-file-name="donation.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Animalcare/templates/donation.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="408">
@@ -151,10 +136,10 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file leaf-file-name="event.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Animalcare/templates/event.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1258">
+                <state relative-caret-position="408">
                   <caret line="24" selection-start-line="24" selection-end-line="24" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -164,24 +149,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file leaf-file-name="event-details.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Animalcare/templates/event-details.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1020">
-                  <caret line="60" column="26" selection-start-line="37" selection-start-column="10" selection-end-line="60" selection-end-column="26" />
-                  <folding>
-                    <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#6;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#7;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#8;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#9;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#10;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
+                <state relative-caret-position="8114">
+                  <caret line="499" column="7" selection-start-line="499" selection-start-column="7" selection-end-line="499" selection-end-column="7" />
                 </state>
               </provider>
             </entry>
@@ -205,7 +177,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Animalcare" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -230,10 +202,10 @@
         <option value="$PROJECT_DIR$/Animalcare/Animalcare/settings.py" />
         <option value="$PROJECT_DIR$/Animalcare/home/urls.py" />
         <option value="$PROJECT_DIR$/Animalcare/templates/event.html" />
-        <option value="$PROJECT_DIR$/Animalcare/templates/event-details.html" />
         <option value="$PROJECT_DIR$/Animalcare/home/models.py" />
         <option value="$PROJECT_DIR$/Animalcare/home/views.py" />
         <option value="$PROJECT_DIR$/Animalcare/templates/index.html" />
+        <option value="$PROJECT_DIR$/Animalcare/templates/event-details.html" />
       </list>
     </option>
   </component>
@@ -249,7 +221,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -321,6 +292,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -373,41 +345,41 @@
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13690476" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32755905" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32872504" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32872504" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32755905" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13690476" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32755905" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32872504" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32755905" />
       <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
   </component>
   <component name="UnknownFeatures">
@@ -437,6 +409,31 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Animalcare/templates/donation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Animalcare/templates/event.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Animalcare/templates/event-details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="60" column="26" selection-start-line="37" selection-start-column="10" selection-end-line="60" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Animalcare/staticfiles/css/style.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -498,31 +495,13 @@
     <entry file="file://$PROJECT_DIR$/Animalcare/staticfiles/js/stellar.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../mediplus/clinic/urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../mediplus/mediplus/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="134" column="44" lean-forward="true" selection-start-line="133" selection-end-line="134" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../mediplus/clinic/urls.py" />
+    <entry file="file://$PROJECT_DIR$/../mediplus/mediplus/settings.py" />
     <entry file="file://$PROJECT_DIR$/Animalcare/home/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../mediplus/doctor/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../mediplus/mediplus/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../mediplus/doctor/models.py" />
+    <entry file="file://$PROJECT_DIR$/../mediplus/mediplus/urls.py" />
     <entry file="file://$PROJECT_DIR$/Animalcare/templates/contact_process.php" />
     <entry file="file://$PROJECT_DIR$/Animalcare/templates/about-us.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -555,12 +534,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../mediplus/clinic/views.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../mediplus/doctor/urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../mediplus/clinic/views.py" />
+    <entry file="file://$PROJECT_DIR$/../mediplus/doctor/urls.py" />
     <entry file="file://$PROJECT_DIR$/Animalcare/templates/donationforanimal.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -630,26 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Animalcare/templates/event-details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="26" selection-start-line="37" selection-start-column="10" selection-end-line="60" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#6;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#7;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#8;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#9;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#10;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Animalcare/templates/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1938">
@@ -659,29 +614,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Animalcare/home/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="833">
           <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
-            <marker date="1559994234324" expanded="true" signature="169:170" ph="..." />
-            <marker date="1559994234324" expanded="true" signature="200:206" ph="..." />
-            <marker date="1559994234324" expanded="true" signature="201:202" ph="..." />
-            <marker date="1559994234324" expanded="true" signature="769:774" ph="..." />
-            <marker date="1559994234324" expanded="true" signature="6037:6242" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Animalcare/home/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
+        <state relative-caret-position="17">
           <caret line="53" column="14" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
           <folding>
             <element signature="e#0#75#0" expanded="true" />
-            <marker date="1559995133882" expanded="true" signature="263:321" ph="..." />
-            <marker date="1559995133882" expanded="true" signature="2616:4551" ph="..." />
-            <marker date="1559995133882" expanded="true" signature="4665:4666" ph="..." />
-            <marker date="1559995133882" expanded="true" signature="5231:5232" ph="..." />
           </folding>
         </state>
       </provider>
@@ -695,7 +641,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Animalcare/templates/event.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1258">
+        <state relative-caret-position="408">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="n#style#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -706,13 +652,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Animalcare/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="17">
           <caret line="57" column="116" selection-start-line="57" selection-start-column="116" selection-end-line="57" selection-end-column="116" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Animalcare/templates/event-details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8114">
+          <caret line="499" column="7" selection-start-line="499" selection-start-column="7" selection-end-line="499" selection-end-column="7" />
         </state>
       </provider>
     </entry>

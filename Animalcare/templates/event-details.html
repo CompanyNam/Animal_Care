@@ -33,10 +33,21 @@
         margin-top:60px;
         text-align:center;
         }
+
+
+        .blocks {display: inline-block; border: solid 1px red; width: 100px;}
+
+    .wrap{
+            width:320px;
+        }
+
     </style>
+
+
+
     </head>
     <body>
-        
+
         <!--================Header Menu Area =================-->
         <header class="header_area">
            	<div class="top_menu row m0">
@@ -59,8 +70,8 @@
 						<a class="ac_btn" href="#">My Account</a>
 						<a class="dn_btn" href="#">Donate Now</a>
 					</div>
-           		</div>	
-           	</div>	
+           		</div>
+           	</div>
             <div class="main_menu">
             	<nav class="navbar navbar-expand-lg navbar-light">
 					<div class="container">
@@ -74,43 +85,43 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 							<ul class="nav navbar-nav menu_nav ml-auto">
-								<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
+								<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
 								<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-								<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> 
+								<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
 								 <li class="nav-item submenu dropdown active">
 									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events</a>
 									<ul class="dropdown-menu">
 										<li class="nav-item"><a class="nav-link" href="event.html">Event</a></li>
 										<li class="nav-item"><a class="nav-link" href="event-details.html">Event Details</a></li>
 									</ul>
-								</li> 
+								</li>
 								<li class="nav-item submenu dropdown">
 									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
 									<ul class="dropdown-menu">
 										<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
 										<li class="nav-item"><a class="nav-link" href="donation.html">Donation</a></li>
 									</ul>
-								</li> 
+								</li>
 								<li class="nav-item submenu dropdown">
 									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
 									<ul class="dropdown-menu">
 										<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
 										<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
 									</ul>
-								</li> 
+								</li>
 
 								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
 								<li class="nav-item"><a href="#" class="search"><i class="lnr lnr-magnifier"></i></a></li>
 							</ul>
-						</div> 
+						</div>
 					</div>
             	</nav>
             </div>
         </header>
         <!--================Header Menu Area =================-->
-        
+
         <!--================Home Banner Area =================-->
         <section class="banner_area">
             <div class="banner_inner d-flex align-items-center">
@@ -128,8 +139,156 @@
             </div>
         </section>
         <!--================End Home Banner Area =================-->
-        
+
         <!--================Event Details Area =================-->
+<<<<<<< HEAD
+<section>
+
+
+    <div class='wrap'>
+        <div class = "blocks"><a href="#" class="pop">
+                  <img src="{{event_main_image.url}}" alt="Los Angeles" style="width:100%;max-height:500px;">
+          </a></div>
+        <div class = "blocks">{%if event_img_1 %}
+                      <a href="#" class="pop">
+                              <img src="{{event_img_1.url}}" alt="Chicago" style="width:100%;max-height:500px;">
+                      </a>
+            {%endif%}
+    </div>
+        <div class = "blocks">{%if event_img_2 %}
+                      <a href="#" class="pop">
+                             <img src="{{event_img_2.url}}" alt="New york" style="width:100%;max-height:500px;">
+                      </a>
+            {%endif%}</div>
+        <div class = "blocks">{%if event_img_3 %}
+                      <a href="#" class="pop">
+                        <img src="{{event_img_3.url}}" alt="New york" style="width:100%;max-height:500px;">
+                      </a>
+             {%endif%}</div>
+         <div class = "blocks">{%if event_img_3 %}
+                      <a href="#" class="pop">
+                        <img src="{{event_img_3.url}}" alt="New york" style="width:100%;max-height:500px;">
+                      </a>
+             {%endif%}</div>
+         <div class = "blocks">{%if event_img_3 %}
+                      <a href="#" class="pop">
+                        <img src="{{event_img_3.url}}" alt="New york" style="width:100%;max-height:500px;">
+                      </a>
+             {%endif%}</div>
+
+    </div>
+    <script>
+                $(function() {
+                        $('.pop').on('click', function() {
+                            $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+                            $('#imagemodal').modal('show');
+                        });
+                });
+    </script>
+
+    <div style="width:30%;margin:auto;">
+
+          <a href="#" class="pop">
+                  <img src="{{event_main_image.url}}" alt="Los Angeles" style="width:100%;max-height:500px;">
+          </a>
+
+            {%if event_img_1 %}
+                      <a href="#" class="pop">
+                              <img src="{{event_img_1.url}}" alt="Chicago" style="width:100%;max-height:500px;">
+                      </a>
+            {%endif%}
+
+
+            {%if event_img_2 %}
+                      <a href="#" class="pop">
+                             <img src="{{event_img_2.url}}" alt="New york" style="width:100%;max-height:500px;">
+                      </a>
+            {%endif%}
+
+            {%if event_img_3 %}
+                      <a href="#" class="pop">
+                        <img src="{{event_img_3.url}}" alt="New york" style="width:100%;max-height:500px;">
+                      </a>
+             {%endif%}
+
+            {%if event_img_4 %}
+                      <a href="#" class="pop">
+                        <img src="{{event_img_4.url}}" alt="New york" style="width:100%;max-height:500px;">
+                      </a>
+             {%endif%}
+
+            {%if event_img_5 %}
+                        <a href="#" class="pop">
+                            <img src="{{event_img_5.url}}" alt="New york" style="width:100%;max-height:500px;">
+                        </a>
+             {%endif%}
+
+            {%if event_img_6 %}
+                      <a href="#" class="pop">
+                            <img src="{{event_img_6.url}}" alt="New york" style="width:100%;max-height:500px;">
+                      </a>
+             {%endif%}
+
+            {%if event_img_7 %}
+                      <a href="#" class="pop">
+                            <img src="{{event_img_7.url}}" alt="New york" style="width:100%;max-height:500px;">
+                      </a>
+             {%endif%}
+
+            {%if event_img_8 %}
+                      <a href="#" class="pop">
+                            <img src="{{event_img_8.url}}" alt="New york" style="width:100%;max-height:500px;">
+                      </a>
+             {%endif%}
+
+            {%if event_img_9 %}
+                      <a href="#" class="pop">
+                            <img src="{{event_img_9.url}}" alt="New york" style="width:100%;max-height:500px;">
+                      </a>
+             {%endif%}
+
+            {%if event_img_10 %}
+                      <a href="#" class="pop">
+                            <img src="{{event_img_10.url}}" alt="New york" style="width:100%;max-height:500px;">
+                      </a>
+            {%endif%}
+
+            <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <img src="" class="imagepreview" style="width: 100%;" >
+                  </div>
+                </div>
+              </div>
+            </div>
+    </div>
+
+                        <div class="row event_text_inner">
+                            <div class="col-lg-4">
+                                <div class="left_text" >
+                                    <ul class="list">
+                                        <li><a href="#"><i class="lnr lnr-calendar-full"></i>{{event_date}} </a></li>
+                                        <li><a href="#"><i class="lnr lnr-apartment"></i>{{address}}</a></li>
+                                        <li><a href="#"><i class="lnr lnr-location"></i>{{city}}</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="right_text">
+                                    <h4>{{event_title}}</h4>
+                                    <p>{{event_details}}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                  <div class="iframe-youtube">
+                    {{event_iframe}}
+                  </div>
+
+</section>
+=======
 		<section class="event_details_area p_120">
 			<div class="container">
 				<div class="event_d_inner">
@@ -237,6 +396,7 @@
               </div>
 
 		</section>
+>>>>>>> f907be525d60936b8486bd71b1b48e871ee50c04
         <!--================End Event Details Area =================-->
         
         <!--================ start footer Area  =================-->	
