@@ -8,9 +8,9 @@
         <link rel="icon" href="img/favicon.png" type="image/png">
         <title>Kindity Charity Multi</title>
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
-        <link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
-        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+        <link rel="stylesheet" href="{% static 'vendors/linericon/style.css'%}">
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}">
         <link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.carousel.min.css'%}">
         <link rel="stylesheet" href="{% static 'vendors/lightbox/simpleLightbox.css'%}">
         <link rel="stylesheet" href="{% static 'vendors/nice-select/css/nice-select.css'%}">
@@ -18,12 +18,9 @@
         <!-- main css -->
         <link rel="stylesheet" href="{% static 'css/style.css'%}">
         <link rel="stylesheet" href="{% static 'css/responsive.css'%}">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
-<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
-
-    </head>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>&ndash;&gt;-->
+<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>&ndash;&gt;-->
+	</head>
     <body>
         
         <!--================Header Menu Area =================-->
@@ -122,26 +119,31 @@
         		<div class="row welcome_inner">
         			<div class="col-lg-6">
         				<div class="welcome_text">
-        					<h4>Welcome to Kindity</h4>
-        					<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
+        					<h4>About Us</h4>
+        					<p style="
+font-family: 'Arimo', sans-serif;
+color: black;
+">Animal Care Club (ACC) was created to help sick or injured stray animals. Our work includes group visits to animal shelters, ecological projects, and educating people mercy towards animals in our community. The club consists of 8 curators and volunteers. We have come together to protest animal cruelty and violence, to educate young people and to rescue many lives.
+Our mission is to reach out our helping hand to our four-legged friends. Animal Care Club does not operate under any sponsor support. We receive charity campaigns for the material we need for the work we see. There are a number of individuals and organizations supporting our work, including Azerbaijani-French University, French Ambassador Aurelia Bouchez, Morocco Ambassador Mohammad Adil Embarsh, Icherisheher municipality, VarYox media group, Cult Baku private members club.
+We also want to cooperate with those who share our main goal: enthusiastic people who are concerned with animal abuse and cruelty.</p>
         					<div class="row">
         						<div class="col-sm-4">
         							<div class="wel_item">
-        								<i class="lnr lnr-database"></i>
+        								<i class="lnr lnr-database" style="color:#41ea2c;"></i>
         								<h4>$2.5M</h4>
         								<p>Total Donation</p>
         							</div>
         						</div>
         						<div class="col-sm-4">
         							<div class="wel_item">
-        								<i class="lnr lnr-book"></i>
+        								<i class="lnr lnr-book" style="color:#41ea2c;"></i>
         								<h4>1465</h4>
         								<p>Total Projects</p>
         							</div>
         						</div>
         						<div class="col-sm-4">
         							<div class="wel_item">
-        								<i class="lnr lnr-users"></i>
+        								<i class="lnr lnr-users" style="color:#41ea2c;"></i>
         								<h4>3965</h4>
         								<p>Total Volunteers</p>
         							</div>
@@ -149,9 +151,9 @@
         					</div>
         				</div>
         			</div>
-        			<div class="col-lg-6">
-        				<div class="welcome_img">
-        					<img class="img-fluid" src="img/welcome-img.jpg" alt="">
+        			<div class="col-lg-6" style="margin-top:100px;">
+        				<div class="welcome_img" style="background:#1aad1a;">
+        					<img class="img-fluid" style="width:500px;" src="{%static 'Shabnam.jpg'%}" alt="">
         				</div>
         			</div>
         		</div>
@@ -208,52 +210,13 @@
         				<div class="testi_slider owl-carousel">
 							<div class="item">
 								<div class="testi_item">
-									<img src="img/testimonials/testi-1.png" alt="">
+									<img src="{% static 'img/testimonials/testi-1.png' %}" alt="">
 									<p>It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its</p>
 									<h4>Cordelia Barton</h4>
 									<h6>CEO at Google</h6>
 								</div>
 							</div>
-							<div class="item">
-								<div class="testi_item">
-									<img src="img/testimonials/testi-2.png" alt="">
-									<p>It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its</p>
-									<h4>Cordelia Barton</h4>
-									<h6>CEO at Google</h6>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testi_item">
-									<img src="img/testimonials/testi-1.png" alt="">
-									<p>It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its</p>
-									<h4>Cordelia Barton</h4>
-									<h6>CEO at Google</h6>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testi_item">
-									<img src="img/testimonials/testi-2.png" alt="">
-									<p>It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its</p>
-									<h4>Cordelia Barton</h4>
-									<h6>CEO at Google</h6>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testi_item">
-									<img src="img/testimonials/testi-1.png" alt="">
-									<p>It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its</p>
-									<h4>Cordelia Barton</h4>
-									<h6>CEO at Google</h6>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testi_item">
-									<img src="img/testimonials/testi-2.png" alt="">
-									<p>It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its</p>
-									<h4>Cordelia Barton</h4>
-									<h6>CEO at Google</h6>
-								</div>
-							</div>
+
 						</div>
         			</div>
         		</div>

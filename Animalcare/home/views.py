@@ -59,11 +59,11 @@ def homeinenglish(request):
     return render(request, 'index.html', context)
 def about_us_english(request):
     langs = Languages.objects.all()
-    language = Languages.objects.all().filter(language_name="English")
-    menu = Menu.objects.all().filter(language=language)
-    home = Home.objects.all().filter(language=language)
-    donor_review = Donor_review.all().filter(language=language
-                                            )
+    language = Languages.objects.get(language_name="English")
+    menu = Menu.objects.get(language=language)
+    home = Home.objects.get(language=language)
+    donor_review = Donor_review.objects.get(language=language)
+
     about_us="About us"
     write_home="Home"
     context = {
@@ -94,8 +94,7 @@ def about_us_english(request):
         'donate_amount_text': home.donate_amount_text,
         'become_volunteer_title': home.become_volunteer_title,
         'donor_name': donor_review.donor_name,
-        'donor_is_who': donor_review.donor_is_who,
-        'donor_description': donor_review.donor_description,
+        'donor_review': donor_review,
         'about_us':about_us,
         'write-home':write_home,
         'langs':langs,
@@ -126,6 +125,7 @@ def event_detail_eng(request,slug):
     language = Languages.objects.get(language_name="English")
     menu = Menu.objects.get(language=language)
     event = get_object_or_404(Event, slug=slug)
+    home = Home.objects.get(language=language)
 
     context = {
         'menu_home': menu.home,
@@ -151,7 +151,7 @@ def event_detail_eng(request,slug):
         'event_img_9': event.event_image9,
         'event_img_10': event.event_image10,
         'event_details':event.details,
-
+        'home_logo':home.logo,
         'address':event.event_adress,
         'city':event.event_city,
 
