@@ -1,5 +1,6 @@
-{% load static %}
 <!doctype html>
+{% load static %}
+
 <html lang="en">
     <head>
         <!-- Required meta tags -->
@@ -20,9 +21,74 @@
         <link rel="stylesheet" href="{% static 'css/responsive.css'%}">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#campaign").hide();
+$("#film").hide()
+$("#ecopro").hide();
+$("#concert").hide();
+$("#button_area").show();
 
+  $("#button_campaign").click(function(){
+					$("#film").hide()
+					$("#ecopro").hide();
+					$("#concert").hide();
+					$("#button_area").hide();
+					$("#campaign").toggle();
+  });
+
+  $("#button_film").click(function(){
+					$("#film").toggle()
+					$("#ecopro").hide();
+					$("#concert").hide();
+					$("#button_area").hide();
+					$("#campaign").hide();
+  });
+
+  $("#button_concert").click(function(){
+					$("#film").hide()
+					$("#ecopro").hide();
+					$("#concert").toggle();
+					$("#button_area").hide();
+					$("#campaign").gide();
+  });
+
+  $("#ecopro").click(function(){
+					$("#film").hide()
+					$("#ecopro").toggle();
+					$("#concert").hide();
+					$("#button_area").hide();
+					$("#campaign").hide();
+  });
+
+
+
+
+
+});
+</script>
+		<style>
+.flex-container {
+  display: flex;
+	flex-wrap:wrap;
+  justify-content: center;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #000;
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 30px;
+  height:130px;
+  border-radius: 10px;
+}
+</style>
     </head>
     <body>
         
@@ -53,7 +119,7 @@
             	<nav class="navbar navbar-expand-lg navbar-light">
 					<div class="container">
 						<!-- Brand and toggle get grouped for better mobile display -->
-						<a class="navbar-brand logo_h" href="index.html"><img src="{% static 'img/logo.png'%}" alt=""></a>
+						<a class="navbar-brand logo_h" href="index.html"><img src="{{home.logo.url}}" height="70px" alt=""></a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
@@ -96,23 +162,43 @@
             </div>
         </section>
         <!--================End Home Banner Area =================-->
-        
+        		<div style="width:75%;margin:auto;min-height:350px; " id="button_area">
+					<div class="flex-container">
+						<div id="button_campaign">
+
+							<div style="width:100%;height:30px;margin:auto;margin-top:50px;" ><h3 >Campaign</h3></div>
+						</div>
+					<div id="button_concert">
+							<div style="width:100%;height:30px;margin:auto;margin-top:50px;"><h3>Concert</h3></div>
+
+					</div>
+					</div>
+					<div class="flex-container">
+						<div >
+							<div style="width:100%;height:30px;margin:auto;margin-top:50px;"><h3>Film</h3></div>
+						</div>
+						<div >
+							<div style="width:100%;height:30px;margin:auto;margin-top:50px;"><h3>Eco-Projects</h3></div>
+						</div>
+					</div>
+				</div>
         <!--================Event Main Area =================-->
-        <section class="event_main_area p_120">
+
+		<section class="event_main_area p_120" id="concert">
         	<div class="container" style="padding:0;">
         		<div class="row event_main_inner">
-					{%for event in event%}
+					{%for concert in concert%}
         			<div class="col-lg-6">
 
         				<div class="event_item">
 							<div class="media">
         						<div class="d-flex">
-        							<img src="{{event.image_main.url}}" style="width:120px;height:120px;" alt="">
+        							<img src="{{concert.image_main.url}}" style="width:120px;height:120px;" alt="">
         						</div>
         						<div class="media-body">
-        							<a href="{{ event.get_absolute_url }}">{{event.date}}</a>
-        							<a href="{{ event.get_absolute_url }}"><h4>{{event.title}}</h4></a>
-        							<p>{{event.event_little_detail}}</p>
+        							<a href="{{ concert.get_absolute_url }}">{{concert.date}}</a>
+        							<a href="{{ concert.get_absolute_url }}"><h4>{{concert.title}}</h4></a>
+        							<p>{{concert.event_little_detail}}</p>
         						</div>
         					</div>
         				</div>
@@ -124,7 +210,94 @@
         		</div>
         	</div>
         </section>
-        <!--================End Event Main Area =================-->
+
+		<section class="event_main_area p_120" id="campaign">
+        	<div class="campaign" style="padding:0;">
+        		<div class="row event_main_inner">
+					{%for campaign in campaign%}
+        			<div class="col-lg-6">
+
+        				<div class="event_item">
+							<div class="media">
+        						<div class="d-flex">
+        							<img src="{{campaign.image_main.url}}" style="width:120px;height:120px;" alt="">
+        						</div>
+        						<div class="media-body">
+        							<a href="{{ campaign.get_absolute_url }}">{{campaign.date}}</a>
+        							<a href="{{ campaign.get_absolute_url }}"><h4>{{campaign.title}}</h4></a>
+        							<p>{{campaign.event_little_detail}}</p>
+        						</div>
+        					</div>
+        				</div>
+
+        			</div>
+					{%endfor%}
+
+
+        		</div>
+        	</div>
+        </section>
+
+		<section class="event_main_area p_120" id="film">
+        	<div class="campaign" style="padding:0;">
+        		<div class="row event_main_inner">
+					{%for film in film%}
+        			<div class="col-lg-6">
+
+        				<div class="event_item">
+							<div class="media">
+        						<div class="d-flex">
+        							<img src="{{film.image_main.url}}" style="width:120px;height:120px;" alt="">
+        						</div>
+        						<div class="media-body">
+        							<a href="{{ film.get_absolute_url }}">{{film.date}}</a>
+        							<a href="{{ film.get_absolute_url }}"><h4>{{film.title}}</h4></a>
+        							<p>{{film.event_little_detail}}</p>
+        						</div>
+        					</div>
+        				</div>
+
+        			</div>
+					{%endfor%}
+
+
+        		</div>
+        	</div>
+        </section>
+
+		<section class="event_main_area p_120" id="ecopro">
+        	<div class="campaign" style="padding:0;">
+        		<div class="row event_main_inner">
+					{%for ecopro in ecopro%}
+        			<div class="col-lg-6">
+
+        				<div class="event_item">
+							<div class="media">
+        						<div class="d-flex">
+        							<img src="{{ecopro.image_main.url}}" style="width:120px;height:120px;" alt="">
+        						</div>
+        						<div class="media-body">
+        							<a href="{{ ecopro.get_absolute_url }}">{{ecopro.date}}</a>
+        							<a href="{{ ecopro.get_absolute_url }}"><h4>{{ecopro.title}}</h4></a>
+        							<p>{{ecopro.event_little_detail}}</p>
+        						</div>
+        					</div>
+        				</div>
+
+        			</div>
+					{%endfor%}
+
+
+        		</div>
+        	</div>
+        </section>
+
+
+
+
+
+
+		<!--================End Event Main Area =================-->
         
         <!--================ start footer Area  =================-->	
         <footer class="footer-area section_gap">

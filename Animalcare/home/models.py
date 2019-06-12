@@ -83,7 +83,7 @@ class Event(models.Model):
     event_image13 = models.ImageField(blank=True)
     upcoming = models.BooleanField(default=False)
     language = models.ForeignKey(Languages, on_delete=models.CASCADE)
-
+    type=models.CharField(max_length=35)
     slug=models.SlugField(unique=True, editable=False, max_length=130)
 
 

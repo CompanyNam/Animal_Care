@@ -5,6 +5,7 @@
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="icon" href="img/favicon.png" type="image/png">
         <title>Kindity Charity Multi</title>
@@ -19,12 +20,49 @@
         <!-- main css -->
         <link rel="stylesheet" href="{% static 'css/style.css'%}">
         <link rel="stylesheet" href="{% static 'css/responsive.css'%}">
-		<link rel="stylesheet" href="{% static 'css/testimonials.css'%}">
-		<link rel="stylesheet" href="{% static 'css/testimonials.css.map'%}">
+		<link rel="stylesheet" href="{% static 'css/_testimonials.css'%}">
+		<link rel="stylesheet" href="{% static 'css/_testimonials.css.map'%}">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<style>
+						.causes_item .causes_img .c_parcent span:before {
+								content: attr(data-content);
+								position: absolute;
+								right: -10px;
+								bottom: 0px;
+								background: #ea2c58;
+								color: #fff;
+								padding: 0px 5px;
+
+							}
+							#perc{
+							width:100%;
+							}
+
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1a7f17;
+  min-height:230px;
+
+  justify-content: center;
+}
+
+.flex-container > div {
+  background-color: #1a7f17;
+
+	margin:30px;
+
+
+
+}
+
+		</style>
+
 	</head>
     <body>
         
@@ -95,11 +133,10 @@
 					</div>
 				</div>
             </div>
-            <div class="donation_area" style="width:100%;height:250px;background-color:#1a7f17;">
-				<div class="container" >
-					<div class="row donation_inner">
-						<div class="col-lg-4">
-							<div class="dontation_item yellow" style="margin-top:40px;background-color:#1a7f17;border-style:solid;border-color:white;border-width:1px;">
+		</section>
+		<section>
+            	<div class="flex-container">
+							<div class="dontation_item yellow" style="margin-top:30px;background-color:#1a7f17;border-style:solid;border-color:white;border-width:1px;height:170px;width:350px;">
 								<div class="media">
 									<div class="media-body">
 										<h4>Total Donation</h4>
@@ -110,9 +147,9 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="dontation_item pink" style="margin-top:40px;background-color:#1a7f17;border-style:solid;border-color:white;border-width:1px;">
+
+
+							<div class="dontation_item pink" style="margin-top:30px;background-color:#1a7f17;border-style:solid;border-color:white;border-width:1px;height:170px; width:350px;">
 								<div class="media">
 									<div class="media-body">
 										<h4>Total Volunteers</h4>
@@ -123,9 +160,9 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="dontation_item green" style="margin-top:40px;background-color:#1a7f17;border-style:solid;border-color:white;border-width:1px;">
+
+
+							<div class="dontation_item green" style="margin-top:3s0px;background-color:#1a7f17;border-style:solid;border-color:white;border-width:1px;height:170px;width:350px;">
 								<div class="media">
 									<div class="media-body">
 										<h4>Future Plans</h4>
@@ -136,10 +173,8 @@
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
 				</div>
-            </div>
+
         </section>
         <!--================End Home Banner Area =================-->
         
@@ -201,24 +236,7 @@ We also want to cooperate with those who share our main goal: enthusiastic peopl
         		<div class="causes_slider owl-carousel">
 				{% for animal_need_help in animal_need_help %}
 					<div class="item">
-					<style>
-						.causes_item .causes_img .c_parcent span:before {
-								content: attr(data-content);
-								position: absolute;
-								right: -10px;
-								bottom: 0px;
-								background: #ea2c58;
-								color: #fff;
-								padding: 0px 5px;
 
-							}
-							#perc{
-							width:100%;
-							}
-
-
-
-					</style>
         				<div class="causes_item">
         					<div class="causes_img">
         						<img class="img-fluid" src="{{animal_need_help.animal_image1.url}}" alt="">
@@ -360,27 +378,7 @@ We also want to cooperate with those who share our main goal: enthusiastic peopl
         <!--================End Testimonials Area =================-->
         
         <!--================Clients Logo Area =================-->
-        <section class="clients_logo_area">
-        	<div class="container">
-        		<div class="clients_slider owl-carousel">
-        			<div class="item">
-        				<img src="img/clients-logo/c-logo-1.png" alt="">
-        			</div>
-        			<div class="item">
-        				<img src="img/clients-logo/c-logo-2.png" alt="">
-        			</div>
-        			<div class="item">
-        				<img src="img/clients-logo/c-logo-3.png" alt="">
-        			</div>
-        			<div class="item">
-        				<img src="img/clients-logo/c-logo-4.png" alt="">
-        			</div>
-        			<div class="item">
-        				<img src="img/clients-logo/c-logo-5.png" alt="">
-        			</div>
-        		</div>
-        	</div>
-        </section>
+
         <!--================End Clients Logo Area =================-->
         
         

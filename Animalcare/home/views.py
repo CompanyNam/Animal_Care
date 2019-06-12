@@ -62,11 +62,12 @@ def about_us_english(request):
     language = Languages.objects.get(language_name="English")
     menu = Menu.objects.get(language=language)
     home = Home.objects.get(language=language)
-    donor_review = Donor_review.objects.get(language=language)
+    testimonial = Donor_review.objects.all().filter(language=language)
 
     about_us="About us"
     write_home="Home"
     context = {
+        'testimonial': testimonial,
         'menu_home': menu.home,
         'menu_gallery': menu.gallery,
         'menu_about': menu.about,
@@ -93,8 +94,6 @@ def about_us_english(request):
         'donate_amount_title': home.donate_amount_title,
         'donate_amount_text': home.donate_amount_text,
         'become_volunteer_title': home.become_volunteer_title,
-        'donor_name': donor_review.donor_name,
-        'donor_review': donor_review,
         'about_us':about_us,
         'write-home':write_home,
         'langs':langs,
@@ -106,8 +105,11 @@ def events_eng(request):
     langs = Languages.objects.all()
     language = Languages.objects.get(language_name="English")
     menu = Menu.objects.get(language=language)
-    event=Event.objects.all().filter(language=language)
-
+    event_campaign=Event.objects.all().filter(language=language,type="campaign")
+    event_concerts=Event.objects.all().filter(language=language,type="concert")
+    event_films=Event.objects.all().filter(language=language,type="film")
+    event_ecoproject=Event.objects.all().filter(language=language,type="ecoproject")
+    home = Home.objects.get(language=language)
     context = {
         'menu_home': menu.home,
         'menu_gallery': menu.gallery,
@@ -116,8 +118,12 @@ def events_eng(request):
         'menu_page': menu.events,
         'menu_blog': menu.blog,
         'menu_contact': menu.contact,
-        'event':event,
+        'campaign':event_campaign,
+        'concert': event_concerts,
+        'film': event_films,
+        'ecopro': event_ecoproject,
         'langs': langs,
+        'home': home,
     }
     return render(request, "event.html", context)
 
